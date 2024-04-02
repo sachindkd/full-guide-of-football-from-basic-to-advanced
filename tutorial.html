@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Tutorials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .tutorial {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tutorial h2 {
+            color: #4CAF50;
+            margin-bottom: 10px; /* Add margin bottom to create space between topics */
+        }
+
+        .tutorial p {
+            color: #666;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <!-- Replace 'video-url.mp4' with the URL of your video file -->
+            <source src="bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <h1>Football Tutorials</h1>
+        
+        <div class="tutorial">
+            <h2>Basic Passing Techniques</h2>
+            <p>In this tutorial, you'll learn the fundamental passing techniques in football.</p>
+            <div class="back-link">
+                <a href="passing techiniques.html">Read Tutorial</a>
+            </div>
+        </div>
+        
+        <div class="tutorial">
+            <h2>Dribbling skills and techniques</h2>
+            <p>Master the art of dribbling with these advanced tips and tricks.</p>
+            <div class="back-link">
+                <a href="dribbling.html">Read Tutorial</a>
+            </div>
+        </div>
+        
+        <div class="tutorial">
+            <h2>Shooting Drills</h2>
+            <p>Improve your shooting accuracy and power with these effective drills.</p>
+            <div class="back-link">
+                <a href="shooting drills.html">Read Tutorial</a>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">Back to Home Page</a>
+        </div>
+    </div>
+</body>
+</html>
